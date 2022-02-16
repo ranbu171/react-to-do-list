@@ -1,8 +1,9 @@
+import Typography from "@mui/material/Typography"
 
 export default function DaysName ({day}) {
 const dayNames = ['Костыль','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота','Воскресенье']
 
     return (
-        <h1>{dayNames[day]}</h1>
+        <Typography variant="h4">{dayNames[day]}</Typography>
     )
 }

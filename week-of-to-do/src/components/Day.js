@@ -40,7 +40,8 @@ export default function Day({day}) {
     flexGrow: 1,
     width: 330,
     bgcolor: 'background.paper',
-    padding: 2
+    padding: 2,
+    margin: "0 8px"
     }
   
   if(day != 7){

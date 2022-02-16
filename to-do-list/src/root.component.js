@@ -13,7 +13,7 @@ import TextField from "@mui/material/TextField";
 import BeenhereIcon from '@mui/icons-material/Beenhere';
 import Button from '@mui/material/Button';
 import { Task } from './classTask';
-import DaysName from "./components/DayOfTasks";
+import DaysName from "./components/classes/DayOfTasks";
 
 export default function Root() {
   const localTasks = JSON.parse(localStorage.getItem(`${window.base.day}`));

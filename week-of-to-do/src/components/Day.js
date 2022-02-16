@@ -35,6 +35,18 @@ export default function Day({day}) {
   }
   let completeProgress = completeTasks && completeTasks/countTasks*100;
 
+
+  const boxStyle = {
+    flexGrow: 1,
+    width: 330,
+    bgcolor: 'background.paper',
+    padding: 2
+    }
+  
+  if(day != 7){
+    boxStyle.borderBottom = '1px solid #1a90ff';
+  }
+
 // function for progress line (MUI)
   const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
     height: 10,
@@ -51,7 +63,7 @@ export default function Day({day}) {
   return (
     <Box
     key={day}
-    sx={{ flexGrow: 1, width: 330, bgcolor: 'background.paper', padding: 2, borderBottom: '1px solid #1a90ff', margin: 1 }}
+    sx={boxStyle}
     >
       <Button
       sx={{width: '100%', border: '1px solid transparent'}}

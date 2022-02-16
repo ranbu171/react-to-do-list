@@ -13,6 +13,7 @@ import TextField from "@mui/material/TextField";
 import BeenhereIcon from '@mui/icons-material/Beenhere';
 import Button from '@mui/material/Button';
 import { Task } from './classTask';
+import DaysName from "./components/DayOfTasks";
 
 export default function Root() {
   const localTasks = JSON.parse(localStorage.getItem(`${window.base.day}`));
@@ -78,6 +79,7 @@ export default function Root() {
   
     return (
       <>
+        <DaysName day = {window.base.day} />
         <Stack sx={{width: 360, marginTop: 1}} direction="row" spacing={0}>
           <TextField
           sx={{width: "80%"}}

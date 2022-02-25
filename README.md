@@ -24,7 +24,7 @@
     <strong>npm install</strong>
     <br>
     <br>
-    После завершения установки:<br>(даже в случае ошибки "command C:\WINDOWS\system32\cmd.exe /d /s /c husky install")<br>
+    После завершения установки:<br>(даже в случае ошибки "... system32\cmd.exe /d /s /c husky install")<br>
     <strong>npm start</strong>
     <br>
     <br></li>
